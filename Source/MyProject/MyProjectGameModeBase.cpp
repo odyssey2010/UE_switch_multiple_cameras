@@ -54,7 +54,6 @@ void AMyProjectGameModeBase::SetFollowTarget(bool PrevTarget)
 	{
 		PlayerController->Possess(TargetActor);
 	}
-		TargetIndex = CurrentIndex < 0 ? 0 : (CurrentIndex + 1) % Actors.Num();
 
 	UE_LOG(LogTemp, Log, TEXT("SetFollowTarget %s"), *TargetActor->GetName());
 }
